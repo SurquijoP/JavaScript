@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>organizador de salario</title>
+</head>
+<body>
+<header>
+    <h1>¿Como organizar tu salario segun tu pais residente?</h1>
+    <img src="ciudad.jpg">
+</header>
+<section>
+    <form>
+        <p id="nombre"></p> 
+        
+        <label For="inputSalario"></label> 
+        <input id="inputSalario" type="number"/>
+</form>
+</section>
+
+<section>
+<form>
+        <label For="inputMoneda">No sabes caunto ganas en USD? Ingresa tu salario,y ahora ingresa tu moneda (COP,PEN,CLP)</label>
+        <input id="inputMoneda" type="text"/>
+
+        <button type="button" onclick="onClickButtonConvertirMoneda()">
+               Convertir moneda a USD
+            </button>
+</form>
+</section>
+
+<section>
+    <form>
+        <label For="inputPais"> En que pais vives?, (Usa la primera letra en mayuscula)</label><br> 
+        <input id="inputPais" type="text"/>
+            
+            <button type="button" onclick="onClickButtonCalSalario()">
+               Calcular salario
+            </button>
+            <p id="resultP"></p>
+    </form>
+</section>
+    <script src="./trabajoFinal.js">      
+    </script>
+</body>
+</html>
